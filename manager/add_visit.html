@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor: Add Visit</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/index.ico">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-light"></nav>
+    <main class="container">
+        <div class="col-md-12">
+            <h3 class="header-title">Add New Visit</h3>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./manage-patients.html"><i class="fas fa-users"></i> Manage Patients</a></li> 
+                    <li class="breadcrumb-item"><a href="#" id="pDetails">Patient Details</a></li>
+                    <li class="breadcrumb-item active">Add New Visit</li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="overflow-auto">
+                                <script type="text/javascript" src="https://c2dcp413.caspio.com/dp/6d6cb0002beaf66e6dfe413e8788/emb"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        managerNavigation('manageRequests');
+
+        document.addEventListener('DataPageReady', function(event) {
+            if (event.detail.appKey == '6d6cb0002beaf66e6dfe413e8788') {
+                $('#pDetails').attr('href', './patient_details.html?pid=' + $('input[name$="Patient_ID"]').val());
+            };
+        });
+    </script>
+</body>
+</html>

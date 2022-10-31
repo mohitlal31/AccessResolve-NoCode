@@ -1,0 +1,409 @@
+body {
+    background: #f1f1f1;
+}
+
+body.public {
+    background: #fff;
+}
+
+body.public main.auth {
+    padding-top: 0px !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+/* ---------- Custom DataPage CSS ---------- */
+
+form#caspioform > div:not([data-cb-name="HeaderErrorMsg"]) {
+    width: 100%;
+}
+
+section[data-cb-name="cbTable"] {
+    width: 100%;
+}
+
+section[data-cb-name="cbTable"] > div > div,
+section[data-cb-name="cbTable"] > div > span.cbFormError,
+section[data-cb-name="cbTable"] > div > div > span.cbFormError {
+    float: left;
+    width: 100% !important;
+}
+
+@media (min-width: 1025px) {
+    span[data-cb-name="cbFormDataRadios"] > input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    .cb-search-container .cbFormFieldCell {
+        padding: 5px 10px 5px 0px !important;
+    }
+}
+
+.cbFormMultiSelectText > label {
+    margin-bottom: 0px !important;
+}
+
+
+@media (max-width: 1024px) {
+
+    span[data-cb-name="cbFormDataRadios"] > label {
+        margin-bottom: 0px !important;
+    }
+
+    section[data-cb-name="cbTable"] > div {
+        float: left;
+        width: 100% !important;
+        padding-right: 0px !important;
+    }
+
+    div[data-cb-name="MultiSelectListBox"] {
+        /* width: 300px !important; */
+    }
+
+    .patient-details .cbFormMultiSelect {
+        float: none !important;
+    }
+
+    nav.cbReportNavBarPanel .cbResultSetNavigationLinks {
+        height: 0px !important;
+    }
+}
+
+.cb-search-container .cbSubmitButtonContainer {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    .search-reset-button-container button {
+        margin-top: 10px;
+    }
+}
+
+/* ---------- Nav Bar ---------- */
+
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) {
+    background: #007FAA;
+    padding: 0;
+}
+
+nav a:not(.dropdown-item) {
+    color: #f8f8f8;
+}
+
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) a:hover {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul li {
+    float: left;
+}
+
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul li a:not(.dropdown-item) {
+    padding: 16px;
+    float: left;
+}
+
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul li a:hover,
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul li a.active {
+    background-color: #2C97BF;
+}
+
+.container {
+    max-width: 992px;
+}
+
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) .dropdown-menu {
+    top: 38px;
+}
+
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) .dropdown-item:hover,
+nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) .dropdown-item:active {
+    background: #007FAA;
+    color: #f8f8f8;
+}
+
+
+
+#navbarToggle {
+    display: none;
+    border: 0px;
+    padding-right: 0px;
+    
+}
+
+#navbarToggle:focus {
+    box-shadow: none !important;
+}
+
+#navbarToggle span { 
+    color: #fff;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(225, 225, 225, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+#siteTitle h5 {
+    margin: 0px 16px 0px 16px;
+    padding: 5px 0px;
+}
+
+@media (max-width: 992px) {
+    #siteTitle h5 {
+        margin: 0px 16px 0px 0px;
+    }
+}
+
+@media (max-width: 815px) {
+    nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) {
+        height: 54px;
+    }
+
+    nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul {
+        position: absolute;
+        float: left;
+        width: 100%;
+        top: 54px;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul.active {
+        display: block;
+    }
+    nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul li {
+        float: left;
+        width: 100%;
+    }
+    nav:not([aria-label="breadcrumb"]):not(.cbReportNavBarPanel):not(.cbActionPanel) ul li a:not(.dropdown-item):not(.cbResultSetNavigationLinks) {
+        float: left;
+        width: 100%;
+        background: #007faa;
+        padding-left: 30px;
+    }
+    #navbarToggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        float: left;
+        width: 100%;
+        top: 55px !important;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #caspioLogo {
+        width: 220px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+
+    .cb-margin-auth-responsive {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+#siteTitle h5 {
+    font-weight: bold;
+}
+
+/* ---------- Patient Portal Content ---------- */
+
+.employee-registration input[type="text"],
+.employee-registration input[type="password"],
+.employee-registration textarea,
+.patient-details input[type="text"],
+.patient-details input[type="password"],
+.patient-details select,
+.patient-details .cbFormMultiSelect,
+.patient-details textarea,
+.patient-visit input[type="text"],
+.patient-visit textarea {
+    width: 300px !important;
+    float: left;
+}
+
+.card {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-reset-button-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.filter-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-button-container {
+    width: 100%;
+    text-align: right;
+}
+
+.add-button-container .btn {
+    padding: 4px 8px;
+    width: 31px;
+    height: 31px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #174478;
+    border-color: #2e6da4;
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    color: #fff !important;
+    background-color: #286090 !important;
+    border-color: #204d74 !important;
+    border: 1px solid transparent;
+}
+
+nav[aria-label="breadcrumb"] a {
+    color: #174478 !important;
+}
+
+.breadcrumb {
+    background: #fff;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+    max-width: 375px;
+}
+
+.profile-edit-container {
+    max-width: 405px;
+}
+
+.profile-button-container {
+    margin-top: 15px;
+}
+
+.profile-button-container a {
+    margin-right: 15px;
+}
+
+table.NavBar {
+    padding: 0px 10px;
+}
+
+.tabular-action-button-container {
+    width: 45px;
+}
+
+main {
+    padding: 54px 0px;
+}
+
+main > div {
+    margin-top: 34px;
+    margin-bottom: 3px;
+}
+
+.highcharts-xaxis .highcharts-axis-line,
+.highcharts-yaxis .highcharts-axis-line {
+    display: none;
+}
+
+.login-container .cbLoginButton,
+.login-container .cbPasswordResetButton {
+    width: 100%;
+}
+
+.login-container a {
+    color: #174478;
+}
+
+.login-container a:hover {
+    color: #0056b3;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 577px) {
+    .cb-margin-responsive,
+    .profile-button-container {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .profile-button-container a {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    /* ul[data-cb-name="ResponsiveJumpToNavBar"] > li > span,
+    ul[data-cb-name="ResponsiveJumpToNavBar"] > li > div {
+        min-width: 20px !important;
+        width: 20px !important;
+    } */
+}
+
+select {
+    height: 34px;
+}
+
+.card {
+    border: none;
+}
+
+input,
+textarea,
+select {
+    box-shadow: none !important;
+}
+
+@media (max-width: 500px) {
+    .patient-message-label h4 {
+        font-size: 18px;
+    }
+}
+
+.patient-message-label-left,
+.patient-visit-label-left {
+    width: 50%;
+    float: left;
+}
+
+.patient-message-label-right,
+.patient-visit-label-right {
+    width: 50%;
+    float: right;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .login-container section[data-cb-name="cbTable"] {
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+        width: 100% !important;
+    }
+}
+
+.cb-search-container select,
+.cb-search-container input {
+    height: 38.8px !important;
+}
