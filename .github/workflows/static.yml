@@ -1,6 +1,9 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
+env: # Or as an environment variable
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      
 on:
   # Runs on pushes targeting the default branch
   push:
